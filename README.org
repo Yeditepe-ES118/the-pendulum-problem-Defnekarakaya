@@ -1,0 +1,43 @@
+#+TITLE: ES118 Assignment #1
+#+AUTHOR: Ufuk Baler, MSc. & Assoc. Prof. Dr. Fethi Okyar
+#+SUBTITLE: 
+#+STARTUP: overview
+#+REVEAL_THEME: simple
+#+REVEAL_INIT_OPTIONS: slideNumber:"c/t", width:1920, height:1080, navigationMode:"linear", transition:"none"
+#+REVEAL_TITLE_SLIDE: <h1>%t</h1> <h2>%s</h2> <h5>%a</h5>
+#+OPTIONS: timestamp:nil toc:1 num:nil reveal_global_footer:nil
+#+REVEAL_EXTRA_CSS: ../style.css
+#+LATEX_HEADER: \usepackage{amsmath}
+
+#+ATTR_HTML: :width 800px
+[[./pendulum.png]]
+
+A pendulum consists of a point mass which is hung from ceiling by a weightless rope of length $L$ m. Assume that the ceiling contact point is frictionless, and air drag is disregarded. A gravitational accelaration $g$ of 9.81 $m/s^2$ acts downward. The time which takes one oscillation is called period, and it is found by
+
+$$T = 2\pi\sqrt{\frac{L}{g}}$$
+
+In a new file called ~assignment1.py~, your aim is to write a function named ~find_period~ such that it will accept the lengths $L_0$ and $L_1$ as arguments which are integers, and
+$$L_1 > L_0 > 0$$
+
+The function shall display the periods with respect to an interval of length values incremented by 1 m. For example, if $L_0 = 2$ m and $L_1 = 10$ m, then in the console you must see,
+#+BEGIN_SRC text
+When L =  2.0 m, T = 2.8 s
+When L =  3.0 m, T = 3.5 s
+When L =  4.0 m, T = 4.0 s
+When L =  5.0 m, T = 4.5 s
+When L =  6.0 m, T = 4.9 s
+When L =  7.0 m, T = 5.3 s
+When L =  8.0 m, T = 5.7 s
+When L =  9.0 m, T = 6.0 s
+When L = 10.0 m, T = 6.3 s
+#+END_SRC
+
+Use a loop to display the example output given above. As a hint you could use ~for~ loop with ~range~ function. Refer mainly to lecture-4 and lecture-5 notes.
+
+Also, the function shall return $T_0$ and $T_1$ values which are to be computed using $L_0$ and $L_1$, respectively.
+
+_Note:_
+- You must do the assignments by yourself in an isolated environment, otherwise you will get no benefit in terms of reinforcing and developing knowledge
+- Understand every bit of the problem, and your code
+- Be aware of what you are studying
+- Constantly ask "why?" while you are coding
